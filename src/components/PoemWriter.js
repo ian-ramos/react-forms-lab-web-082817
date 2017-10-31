@@ -46,6 +46,7 @@ class PoemWriter extends React.Component {
     this.setState({
       currentText: e.target.value
     })
+    //checks if poem is valid, if it is it'll render the div (errorDiv function)
     this.checkPoem()
   }
 
