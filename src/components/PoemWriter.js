@@ -28,17 +28,15 @@ class PoemWriter extends React.Component {
   }
 
   errorDiv = () => {
-    if(this.checkPoem()) {
-      return <div></div>
-    } else {
-      return (
+    if(!this.checkPoem()) {
+       return (
         <div
           id="poem-validation-error"
           style={{color: 'red'}}
         >
           This poem is not written in the right structure!
         </div>
-      )
+      ) 
     }
   }
 
